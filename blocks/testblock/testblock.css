@@ -1,4 +1,9 @@
 .testblock   {
- color :blue;
+ 
+    margin: 0;
+    background: #eee;
+    padding: 1em;
+    border-radius: 1em;
+  
 }
 

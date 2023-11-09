@@ -1,3 +1,7 @@
+.form-wrapper {
+   margin-top: 10% !important;
+}
+
 main .form {
   background-color: var(--color-white);
   padding: var(--spacing-s);
@@ -19,15 +23,10 @@ main .form h3 {
 main .form input,
 main .form textarea,
 main .form select {
-  border: solid 1px var(--bg-color-grey);
-  padding: var(--spacing-xxs) var(--spacing-xs);
   width: 100%;
-  max-width: 50rem;
+  padding: 12px 20px;
+  margin: 8px 0;
   box-sizing: border-box;
-  border-radius: var(--input-border-radius);
-  font-size: var(--type-body-s-size);
-  line-height: var(--type-body-s-lh);
-  font-family: var(--body-font-family);
 }
 
 main .form textarea {
@@ -43,8 +42,11 @@ main .form label {
   display: block;
   padding-bottom: var(--spacing-xxs);
   box-sizing: border-box;
-  font-size: var(--type-body-s-size);
   line-height: var(--type-body-s-lh);
+  margin-top: 0.625rem;
+  color: var(--borderDarker);
+  font-size: 0.825rem;
+  transition: all 0.25s;
 }
 
 main .form label.required::after {
@@ -112,7 +114,18 @@ main .form-legal-wrapper p {
 }
 
 main .form button {
+  background-color: #555555;
   font-family: var(--body-font-family);
+  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {
